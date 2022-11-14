@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router basename="/old-react">
+        <Router basename={this.props.basename ?? "/"}>
           <Switch>
             <Route exact path="/">
               <LoginPage
