@@ -10,7 +10,8 @@ module.exports = {
     ...dependencies,
     react: {
       singleton: true,
-      requiredVersion: dependencies["react"],
+      strictVersion: true,
+      requiredVersion: ">=16.4.0 <= 18.2.0",
     },
     "react-dom": {
       singleton: true,
