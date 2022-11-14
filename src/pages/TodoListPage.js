@@ -5,11 +5,11 @@ import { withRouter } from "react-router-dom";
 
 export class TodoListPage extends Component {
   componentDidMount() {
-    if (!this.props.username) this.props.history.push("/old-react");
+    if (!this.props.username) this.props.history.push("/");
   }
   componentDidUpdate(prevProps) {
     if (this.props.username !== prevProps.username) {
-      if (!this.props.username) this.props.history.push("/old-react");
+      if (!this.props.username) this.props.history.push("/");
     }
   }
   render() {

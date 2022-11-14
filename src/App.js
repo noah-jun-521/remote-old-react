@@ -14,15 +14,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
+        <Router basename="/old-react">
           <Switch>
-            <Route exact path="/old-react">
+            <Route exact path="/">
               <LoginPage
                 username={this.state.username}
                 onUsernameChange={this.usernameHandler}
               />
             </Route>
-            <Route path="/old-react/todolist">
+            <Route path="/todolist">
               <TodoListPage
                 username={this.state.username}
                 onUsernameChange={this.usernameHandler}
