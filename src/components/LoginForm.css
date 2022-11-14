@@ -1,0 +1,9 @@
+.spoiler {
+  background-color: black;
+  color: black;
+  cursor: pointer;
+}
+
+.spoiler:hover {
+  background-color: white;
+}
